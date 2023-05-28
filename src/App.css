@@ -1,38 +1,158 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: #1b1b1b;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 1rem 0;
+}
+.roi_cal_card {
+  background-color: white;
+  width: 550px;
+  max-width: 90%;
+  padding: 24px;
+  border-radius: 12px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.title2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.body1 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.body2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.outline {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.overline {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.trans_cta {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.grey_80 {
+  color: #808080;
+}
+.grey_a8 {
+  color: #a8a8a8;
+}
+.color_yellow{
+  color: #f6bf00;
+}
+.ml-12 {
+  margin-left: 12px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.cake_input {
+  border: 1px solid #cacaca;
+  display: flex;
+  align-items: center;
+  background-color: #f9fafb;
+  height: 47px;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+.cake_input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  background-color: transparent;
+  text-align: end;
+}
+.cake_input:has(input:focus) {
+  border: 1px solid #fed700;
+}
+.balance_box {
+  background-color: #f8f8f8;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.balance_box.selected {
+  transition: all 0.2s ease-in-out;
+  background-color: #fff9aa;
+}
+
+.dayBox {
+  background-color: #f9fafb;
+  border: 2px solid #f9fafb;
+  width: 100%;
+  padding: 10px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.dayBox.selected {
+  border: 2px solid #fed700;
+  background-color: #fceb74;
+  transition: all 0.2s ease-in-out;
+}
+.don_input {
+  border: 1px solid #cacaca;
+  display: flex;
+  align-items: center;
+  background-color: #f9fafb;
+  height: 47px;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+.don_input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  background-color: transparent;
+  text-align: end;
+}
+.don_input:has(input:focus) {
+  border: 1px solid #fed700;
+}
+.primary_cta, .secondary_cta{
+  outline: none;
   color: white;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #1b1b1b;
 }
-
-.App-link {
-  color: #61dafb;
+.secondary_cta{
+  color: black;
+  border: 1px solid black;
+  background-color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pointer{
+  cursor: pointer;
 }
